@@ -12,7 +12,7 @@
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.LoginController">
    <left>
        <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
-           <ImageView fitHeight="544.0" fitWidth="323.0" layoutX="-2.0" pickOnBounds="true" preserveRatio="true">
+           <ImageView fx:id="checkerBoardView" fitHeight="544.0" fitWidth="323.0" layoutX="-2.0" pickOnBounds="true" preserveRatio="true">
                <Image url="@../../Images/MockUI.png" />
            </ImageView>
        </AnchorPane>
