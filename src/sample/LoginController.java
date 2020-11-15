@@ -22,9 +22,16 @@ public class LoginController implements Initializable {
     @FXML
     public ImageView checkerBoardView;
 
-    public Label InvalidNameText;
+    @FXML
+    public Label invalidNameText;
+
+    @FXML
     public Button StartButton;
+
+    @FXML
     public TextField player2Input;
+
+    @FXML
     public TextField player1Input;
 
     @Override
@@ -37,5 +44,18 @@ public class LoginController implements Initializable {
     public void leaveLoginPage(ActionEvent event) {
         Stage stage = (Stage) exitButton.getScene().getWindow();
         stage.close();
+    }
+
+    public void startGame(ActionEvent event) {
+        if(checkInvalidNames(player1Input.getText(), player2Input.getText())) {
+            invalidNameText.setText("Invalid Names :( !!");
+            return;
+        }
+
+        System.out.println("Go to checkers game!");
+    }
+
+    public boolean checkInvalidNames(String name1, String name2) {
+        return name1.length() <= 0 || name2.length() <= 0 || name1.equals(name2);
     }
 }

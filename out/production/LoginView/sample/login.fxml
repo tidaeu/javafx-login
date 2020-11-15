@@ -37,8 +37,9 @@
            <TextField fx:id="player1Input" layoutX="25.0" layoutY="129.0" prefHeight="26.0" prefWidth="231.0" />
            <TextField fx:id="player2Input" layoutX="27.0" layoutY="210.0" prefHeight="26.0" prefWidth="226.0" />
            <Button fx:id="exitButton" contentDisplay="CENTER" layoutX="160.0" layoutY="289.0" mnemonicParsing="false" onAction="#leaveLoginPage" prefHeight="43.0" prefWidth="89.0" style="-fx-background-color: #FF6666; -fx-border-color: #000000;" text="Exit Game" />
-           <Button fx:id="StartButton" contentDisplay="CENTER" layoutX="31.0" layoutY="289.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="89.0" style="-fx-background-color: #92B8DE; -fx-border-color: #000000;" text="Start Game!" />
-           <Label fx:id="InvalidNameText" layoutX="28.0" layoutY="254.0" textFill="#fc4848" />
+           <Button fx:id="StartButton" contentDisplay="CENTER" layoutX="31.0" layoutY="289.0" mnemonicParsing="false" onAction="#startGame" prefHeight="43.0" prefWidth="89.0" style="-fx-background-color: #92B8DE; -fx-border-color: #000000;" text="Start Game!" />
+           <Label fx:id="invalidNameText" layoutX="84.0" layoutY="257.0" prefHeight="18.0" prefWidth="111.0" textAlignment="CENTER" textFill="#fc4848" />
+         <Label fx:id="invalidNameText1" layoutX="84.0" layoutY="253.0" prefHeight="18.0" prefWidth="111.0" textAlignment="CENTER" textFill="#fc4848" />
        </AnchorPane>
    </right>
 </BorderPane>
